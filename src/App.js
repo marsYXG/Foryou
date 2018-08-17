@@ -8,8 +8,7 @@ class App extends React.Component {
     render () {
         return (
             <div>
-                <Route path="/Register" component={Register}></Route>
-                <Route path="/login" component={Login}></Route>
+                <Route path="/" component={Login}></Route>
             </div>
         )
     }
