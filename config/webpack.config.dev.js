@@ -123,6 +123,14 @@ module.exports = {
         include: paths.appSrc,
       },
       {
+        test: /\.(css|less)$/, //  这里加上less
+        use: [
+          {
+            loader: require.resolve('less-loader') // 配置less-loader
+          }
+        ]
+      },
+      {
         // "oneOf" will traverse all following loaders until one will
         // match the requirements. When no loader matches it will fall
         // back to the "file" loader at the end of the loader list.
